@@ -1,0 +1,48 @@
+<div class="container-login">
+  <form [formGroup]="loginForm" class="form-group" (ngSubmit)="onSubmit()">
+    <img
+      ngSrc="../assets/img/logo_login.png"
+      class="logo-login"
+      width="119"
+      height="30"
+      alt=""
+    />
+
+    <h3 class="form-title">Olá, faça login em sua conta.</h3>
+
+    <div>
+      <label for="email" #emailLabel class="form-label">E-mail</label>
+      <input
+        type="text"
+        id="email"
+        formControlName="email"
+        class="form-input"
+        (click)="onFocusInput('emailLabel')"
+        (blur)="onBlurInput('emailLabel')"
+      />
+    </div>
+
+    <div>
+      <label for="password" #passLabel class="form-label">Senha</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="form-input"
+        (click)="onFocusInput('passLabel')"
+        (blur)="onBlurInput('passLabel')"
+      />
+    </div>
+
+    <div *ngIf="loading; else noLoading">
+      <button class="button-login">
+        <div class="loader"></div>
+        Entrando...
+      </button>
+    </div>
+
+    <ng-template #noLoading>
+      <button class="button-login">Entrar</button>
+    </ng-template>
+  </form>
+</div>

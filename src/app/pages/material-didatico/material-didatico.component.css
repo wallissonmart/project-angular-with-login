@@ -1,0 +1,234 @@
+.container-material-didatico {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  gap: 30px;
+  margin: 30px 0px;
+}
+
+.wallpaper-m-didatico {
+  height: auto;
+  width: 100%;
+}
+
+.content-m-didatico {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 519px;
+  width: 100%;
+  border-radius: 8px;
+  padding-left: 62px;
+  background-color: #fff;
+}
+
+.header-content-m-didatico {
+  display: flex;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.box-week-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 291px;
+  height: 27px;
+}
+
+.box-week-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+  border-radius: 500px;
+  width: 220px;
+  height: 27px;
+  background: #e4ebfb;
+}
+
+.text-box-week-date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #7183a6;
+}
+
+.fa-icon {
+  font-size: 1.2rem;
+  margin-left: 5px;
+  color: #7183a6;
+}
+
+.box-ver-todo-conteudo-m-didatico {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 4px;
+  top: 56px;
+  right: 72px;
+  width: 180px;
+  height: 51px;
+  border: 1px solid #4743ff;
+  border-radius: 8px;
+}
+
+.box-ver-todo-conteudo-m-didatico {
+  cursor: pointer;
+}
+
+.text-box-ver-todo-conteudo-m-didatico {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4743ff;
+}
+
+.box-ver-todo-conteudo-video-aulas {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 4px;
+  top: 56px;
+  right: 72px;
+  gap: 8px;
+  width: 204px;
+  height: 52px;
+  border: 1px solid #ff0100;
+  border-radius: 8px;
+}
+
+.text-box-ver-todo-conteudo-video-aulas {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ff0100;
+}
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 16px;
+  color: #354564;
+}
+
+.subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 5px;
+  color: #7183a6;
+}
+
+.content-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-right: 62px;
+  gap: 32px;
+  height: 236px;
+  margin-top: 46px;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-card {
+  width: 310px;
+  height: 174px;
+}
+
+.img-card:hover {
+  cursor: pointer;
+}
+
+.box-number-slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+  position: absolute;
+  width: 66px;
+  height: 24px;
+  left: 16px;
+  top: 134px;
+  background: rgba(12, 12, 12, 0.7);
+  border-radius: 500px;
+}
+
+.text-box-number-slides {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.title-card {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 16px;
+  width: fit-content;
+  color: #354564;
+}
+
+.title-card:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .header-content-m-didatico {
+    justify-content: center;
+  }
+  .box-ver-todo-conteudo-m-didatico {
+    position: none;
+    margin-top: 25px;
+  }
+  .box-ver-todo-conteudo-video-aulas {
+    position: none;
+    margin-top: 25px;
+  }
+  .title {
+    margin-top: 70px;
+  }
+}

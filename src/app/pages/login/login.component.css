@@ -1,0 +1,114 @@
+.container-login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.logo-login {
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #04183e;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+.form-label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  color: #04183e;
+}
+
+.form-label-pass {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #d0daef;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding: 15px;
+  border: 1px solid #e4ebfb;
+  border-radius: 4px;
+  font-family: "Roboto";
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #04183e;
+}
+
+.form-input:focus {
+  outline: solid 1px #0079ff;
+}
+
+.label-focus {
+  color: #0079ff;
+}
+
+.button-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 48px;
+  width: 100%;
+  border-style: none;
+  border-radius: 4px;
+  background: #1dc763;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+
+.button-login:hover {
+  cursor: pointer;
+  background: #17974c;
+}
+
+.loader {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  background: transparent;
+  border: 2px solid transparent;
+  border-top: 2px solid #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

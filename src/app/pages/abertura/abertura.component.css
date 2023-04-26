@@ -1,0 +1,187 @@
+.container-abertura {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../../assets/img/abertura_wallpaper.jpg"), #1d1b1b;
+}
+
+.container-all-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  margin: 70px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.title:hover {
+  color: #8b8686;
+  cursor: pointer;
+}
+
+.c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 28px;
+  height: 4px;
+  margin-bottom: 10px;
+}
+
+.container-circle-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  height: 293px;
+  left: 33px;
+  top: 100px;
+  border-radius: 50%;
+  background: #464141;
+}
+
+.container-circle-1:hover {
+  cursor: pointer;
+  background: #464141d5;
+}
+
+.circle-1 {
+  width: 251px;
+  height: 251px;
+  border-radius: 50%;
+  background: url("../../../assets/img/circle_1.png"), #c2d8ff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+}
+
+.icon-circle-1 {
+  width: 251px;
+  height: 251px;
+  background: url("../../../assets/img/livro.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+}
+
+.container-circle-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  height: 293px;
+  left: 33px;
+  top: 100px;
+  border-radius: 50%;
+  background: #464141;
+}
+
+.circle-2 {
+  width: 251px;
+  height: 251px;
+  border-radius: 50%;
+  background: url("../../../assets/img/circle_2.png"), #91dea2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+}
+
+.icon-circle-2 {
+  width: 251px;
+  height: 251px;
+
+  background: url("../../../assets/img/medalha.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+}
+
+.container-circle-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  height: 293px;
+  left: 33px;
+  top: 100px;
+  border-radius: 50%;
+  background: #464141;
+}
+
+.circle-3 {
+  width: 251px;
+  height: 251px;
+  border-radius: 50%;
+
+  background: url("../../../assets/img/circle_3.png"), #f4aeff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+}
+
+.icon-circle-3 {
+  width: 251px;
+  height: 251px;
+  background: url("../../../assets/img/pintar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+}
+
+.container-circle-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  height: 293px;
+  left: 33px;
+  top: 100px;
+
+  border-radius: 50%;
+  background: #464141;
+}
+
+.circle-4 {
+  width: 251px;
+  height: 251px;
+  border-radius: 50%;
+  background: url("../../../assets/img/circle_4.png"), #ffbfbf;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+}
+
+.icon-circle-4 {
+  width: 251px;
+  height: 251px;
+  background: url("../../../assets/img/ytb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+}
+
+@media (max-width: 1270px) {
+  .container-all-circles {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}

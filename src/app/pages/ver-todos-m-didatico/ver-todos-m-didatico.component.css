@@ -1,0 +1,78 @@
+.container-ver-todos-material-didatico {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.content-m-didatico {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  width: 92%;
+  border-radius: 8px;
+  padding: 56px 72px;
+  margin: 30px 0px;
+  background-color: #fff;
+}
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 16px;
+  color: #354564;
+}
+
+.subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 5px;
+  color: #7183a6;
+}
+
+.content-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 32px;
+  margin-top: 46px;
+  overflow-x: scroll;
+}
+
+/*
+::-webkit-scrollbar {
+
+}
+*/
+
+.img-card {
+  width: 310px;
+  height: 174px;
+}
+
+.img-card:hover {
+  cursor: pointer;
+}
+
+.title-card {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 16px;
+  width: fit-content;
+  color: #354564;
+}
+
+.title-card:hover {
+  cursor: pointer;
+}

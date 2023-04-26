@@ -1,0 +1,23 @@
+<app-header-workspace />
+
+<div class="container-ver-todos-material-didatico">
+  <div class="content-m-didatico">
+    <h3 class="title">Material didático</h3>
+    <h4 class="subtitle">Material didático</h4>
+
+    <div class="content-cards">
+      <div class="card" *ngFor="let design of designs">
+        <img
+          src="{{ design.cover.medium }}"
+          class="img-card"
+          alt=""
+          (click)="openModePresentation(design.id)"
+        />
+
+        <h4 class="title-card" (click)="openModePresentation(design.id)">
+          {{ design.title }}
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>

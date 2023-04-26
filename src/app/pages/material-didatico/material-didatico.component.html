@@ -1,0 +1,102 @@
+<app-header-workspace />
+
+<div class="container-material-didatico">
+  <div class="content">
+    <img
+      src="../assets/img/material_didatico_wallpaper.jpg"
+      class="wallpaper-m-didatico"
+      alt=""
+    />
+
+    <div class="content-m-didatico">
+      <div class="header-content-m-didatico">
+        <div class="box-week-filter">
+          <div class="box-week-date">
+            <p class="text-box-week-date">Semana de 06/02 até 28/02</p>
+          </div>
+          <fa-icon class="fa-icon" [icon]="faAngleLeft" />
+          <fa-icon class="fa-icon" [icon]="faAngleRight" />
+        </div>
+
+        <div
+          class="box-ver-todo-conteudo-m-didatico"
+          (click)="goTo('/ver-todos-material-didatico')"
+        >
+          <p class="text-box-ver-todo-conteudo-m-didatico">Ver todo conteúdo</p>
+        </div>
+      </div>
+
+      <h3 class="title">Material didático</h3>
+      <h4 class="subtitle">Material didático</h4>
+
+      <div class="content-cards">
+        <div class="card" *ngFor="let design of designs">
+          <img
+            src="{{ design.cover.medium }}"
+            class="img-card"
+            alt=""
+            (click)="openModePresentation(design.id)"
+          />
+
+          <div class="box-number-slides">
+            <p class="text-box-number-slides">
+              {{ design.pages?.length }} Slides
+            </p>
+          </div>
+
+          <h4 class="title-card" (click)="openModePresentation(design.id)">
+            {{ design.title }}
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="content-m-didatico">
+      <div class="header-content-m-didatico">
+        <div class="box-week-filter">
+          <div class="box-week-date">
+            <p class="text-box-week-date">Semana de 06/02 até 28/02</p>
+          </div>
+
+          <fa-icon class="fa-icon" [icon]="faAngleLeft" />
+          <fa-icon class="fa-icon" [icon]="faAngleRight" />
+        </div>
+
+        <div class="box-ver-todo-conteudo-video-aulas">
+          <img
+            ngSrc="../assets/img/icon_ytb_video_aulas.png"
+            width="20"
+            height="20"
+            alt=""
+          />
+
+          <p class="text-box-ver-todo-conteudo-video-aulas">
+            Ver todo conteúdo
+          </p>
+        </div>
+      </div>
+
+      <h3 class="title">Vídeo aulas</h3>
+      <h4 class="subtitle">
+        Complemente os estudos assistindo o conteúdo de forma dinâmica.
+      </h4>
+
+      <div class="content-cards">
+        <div class="card">
+          <img src="../../../assets/img/ytb_video_1.png" alt="" />
+        </div>
+
+        <div class="card">
+          <img src="../../../assets/img/ytb_video_2.png" alt="" />
+        </div>
+
+        <div class="card">
+          <img src="../../../assets/img/ytb_video_3.png" alt="" />
+        </div>
+
+        <div class="card">
+          <img src="../../../assets/img/ytb_video_4.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
