@@ -39,8 +39,8 @@
           />
 
           <div class="box-number-slides">
-            <p class="text-box-number-slides">
-              {{ design.pages?.length }} Slides
+            <p class="text-box-number-slides" *ngIf="design.pages">
+              {{ design.pages.length }} Slides
             </p>
           </div>
 
